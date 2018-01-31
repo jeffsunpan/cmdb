@@ -1351,7 +1351,7 @@ def updatehost(ip):
         forks = 1,
     )
     datastructure = runner.run()['contacted']
-
+    return datastructure
     Default_IP = datastructure[ip]['ansible_facts']['ansible_default_ipv4']['address']
     Total_Memory = datastructure[ip]['ansible_facts']['ansible_memory_mb']['real']['total']
     CPUs = datastructure[ip]['ansible_facts']['ansible_processor_vcpus']

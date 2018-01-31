@@ -1,0 +1,7 @@
+- name: Set authorized key in alternate location
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA7KZGptGQRntb+rLHAGS7/invyQGhgd7HlO2wqIlYoKS72GgUW7211vR0oV2AMAsUF/Q229twDLKzcBSCRIqJeEB6lvUXVkbnxbFEVjNodFOKl6yXOoya54uREo1aPcdVUujp+d9f4ehQ23mKwAZPyCqi4jH7r09HIkpZpKgrFJYZ+pbBwW39KDK5Aq450NtYdGdHrvlB7g5Z/c8jqjoI9ueMLkpCs6O/CzQujIGf0xnvG+jT5HZBuyBpAAJt9gnEicrf/CZMYCHRgJXriQU2W/cFgYY500TaWkGUO+RThZzTkUQv/3DiqafTRFgQpFA3lD0xbNP/bvQ6ygdRyIlg+w== 12333' }}"
+    path: /root/.ssh/authorized_keys
+    manage_dir: True

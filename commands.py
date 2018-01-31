@@ -22,7 +22,6 @@ runner = ansible.runner.Runner(
 datastructure = runner.run()['contacted']
 
 
-
 for ip in datastructure:
     Default_IP = datastructure[ip]['ansible_facts']['ansible_default_ipv4']['address']
     Total_Memory = datastructure[ip]['ansible_facts']['ansible_memory_mb']['real']['total']
