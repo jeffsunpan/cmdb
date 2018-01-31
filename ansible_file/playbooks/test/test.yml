@@ -1,0 +1,5 @@
+- name: Install Jdk To Client
+  remote_user: root
+  hosts: all
+  roles:
+    - common
